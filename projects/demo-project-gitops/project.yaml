@@ -1,0 +1,9 @@
+apiVersion: openchoreo.dev/v1alpha1
+kind: Project
+metadata:
+  name: demo-project-gitops
+  namespace: default
+spec:
+  displayName: "Demo Project"
+  deploymentPipelineRef:
+    name: simple-pipeline
