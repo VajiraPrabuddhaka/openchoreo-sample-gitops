@@ -7,4 +7,4 @@ spec:
   planeID: "default-buildplane"
   clusterAgent:
     clientCA:
-      value: {}
+      value: ""

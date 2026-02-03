@@ -6,7 +6,7 @@ metadata:
 spec:
   clusterAgent:
     clientCA:
-      value: {}
+      value: ""
   gateway:
     organizationHTTPPort: 19081
     organizationHTTPSPort: 19444
