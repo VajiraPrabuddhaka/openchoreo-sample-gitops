@@ -4,6 +4,4 @@ metadata:
   name: demo-project-gitops
   namespace: default
 spec:
-  displayName: "Demo Project"
-  deploymentPipelineRef:
-    name: simple-pipeline
+  deploymentPipelineRef: standard
