@@ -6,38 +6,7 @@ metadata:
 spec:
   clusterAgent:
     clientCA:
-      value: |
-        -----BEGIN CERTIFICATE-----
-        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
-        I/9H6+SePdPC6sm+VFU=
-        -----END CERTIFICATE-----
+      value: {}
   gateway:
     organizationHTTPPort: 19081
     organizationHTTPSPort: 19444
