@@ -6,7 +6,7 @@ metadata:
 spec:
   containers:
     main:
-      image: host.k3d.internal:10082/demo-project-gitops-greeter-service-gitops-image:v1-a9b44f18
+      image: host.k3d.internal:10082/demo-project-gitops-greeter-service-gitops-image:v1-70168a71
   endpoints:
     greeter-api:
       port: 9090

@@ -8,4 +8,4 @@ spec:
   owner:
     componentName: greeter-service-gitops
     projectName: demo-project-gitops
-  releaseName: greeter-service-gitops-a9b44f18
+  releaseName: greeter-service-gitops-70168a71
