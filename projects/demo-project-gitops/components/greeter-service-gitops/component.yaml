@@ -11,7 +11,7 @@ spec:
     name: docker-gitops
     systemParameters:
       repository:
-        url: "https://github.com/openchoreo/sample-workloads"
+        url: "https://github.com/VajiraPrabuddhaka/oc-sample-workloads"
         revision:
           branch: "main"
         appPath: "/service-go-greeter"
@@ -20,7 +20,7 @@ spec:
         context: "/service-go-greeter"
         filePath: "/service-go-greeter/Dockerfile"
       gitops:
-        repositoryUrl: "https://github.com/VajiraPrabuddhaka/openchoreo-gitops-demo"  # CHANGE THIS
+        repositoryUrl: "https://github.com/VajiraPrabuddhaka/openchoreo-sample-gitops"
         branch: "main"
         credentialsRef: "gitops-repo-credentials"
         githubTokenRef: "github-api-token"
