@@ -9,4 +9,4 @@ metadata:
   name: doclet
   namespace: default
 spec:
-  deploymentPipelineRef: default
+  deploymentPipelineRef: standard
