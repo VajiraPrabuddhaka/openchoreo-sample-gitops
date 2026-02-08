@@ -4,8 +4,6 @@ metadata:
   name: greeter-service-gitops-a9b44f18
   namespace: default
 spec:
-  componentProfile:
-    parameters: null
   componentType:
     resources:
     - id: deployment
