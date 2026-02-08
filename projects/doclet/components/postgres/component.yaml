@@ -8,7 +8,6 @@ spec:
     projectName: doclet
 
   componentType: deployment/database
-  autoDeploy: true
 
   parameters:
     replicas: 1

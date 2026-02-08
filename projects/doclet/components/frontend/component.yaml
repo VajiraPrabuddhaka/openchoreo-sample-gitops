@@ -8,6 +8,7 @@ spec:
     projectName: doclet
 
   componentType: deployment/web-application
+  autoBuild: true
 
   workflow:
     name: docker-gitops-release

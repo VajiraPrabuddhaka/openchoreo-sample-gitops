@@ -8,7 +8,6 @@ spec:
     projectName: doclet
 
   componentType: deployment/message-broker
-  autoDeploy: true
 
   parameters:
     replicas: 1

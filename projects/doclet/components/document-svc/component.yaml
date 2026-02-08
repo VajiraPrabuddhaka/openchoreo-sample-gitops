@@ -9,6 +9,8 @@ spec:
 
   componentType: deployment/service
 
+  autoBuild: true
+
   workflow:
     name: docker-gitops-release
     systemParameters:
