@@ -1,0 +1,44 @@
+apiVersion: openchoreo.dev/v1alpha1
+kind: ReleaseConfig
+
+# ComponentRelease output configuration
+componentReleaseDefaults:
+  defaultOutputDir: ./releases
+
+  projects:
+    demo-project-gitops:
+      defaultOutputDir: ./projects/demo-project-gitops/releases
+      components:
+        greeter-service-gitops: ./projects/demo-project-gitops/components/greeter-service-gitops/releases
+        reading-list-service-gitops: ./projects/demo-project-gitops/components/reading-list-service-gitops/releases
+        react-starter-gitops: ./projects/demo-project-gitops/components/react-starter-gitops/releases
+
+    doclet:
+      defaultOutputDir: ./projects/doclet/releases
+      components:
+        document-svc: ./projects/doclet/components/document-svc/releases
+        frontend: ./projects/doclet/components/frontend/releases
+        collab-svc: ./projects/doclet/components/collab-svc/releases
+        postgres: ./projects/doclet/components/postgres/releases
+        nats: ./projects/doclet/components/nats/releases
+
+# ReleaseBinding output configuration
+releaseBindingDefaults:
+  defaultOutputDir: ./bindings
+
+  projects:
+    demo-project-gitops:
+      defaultOutputDir: ./projects/demo-project-gitops/bindings
+      components:
+        greeter-service-gitops: ./projects/demo-project-gitops/components/greeter-service-gitops/release-bindings
+        reading-list-service-gitops: ./projects/demo-project-gitops/components/reading-list-service-gitops/release-bindings
+        react-starter-gitops: ./projects/demo-project-gitops/components/react-starter-gitops/release-bindings
+
+    doclet:
+      defaultOutputDir: ./projects/doclet/bindings
+      components:
+        document-svc: ./projects/doclet/components/document-svc/release-bindings
+        frontend: ./projects/doclet/components/frontend/release-bindings
+        collab-svc: ./projects/doclet/components/collab-svc/release-bindings
+        postgres: ./projects/doclet/components/postgres/release-bindings
+        nats: ./projects/doclet/components/nats/release-bindings
