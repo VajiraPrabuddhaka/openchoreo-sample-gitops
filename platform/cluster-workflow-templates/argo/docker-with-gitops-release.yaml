@@ -409,7 +409,7 @@ spec:
             echo "Project: $PROJECT_NAME"
             echo "Use pipeline: $USE_PIPELINE"
 
-            occ release-binding generate \
+            occ releasebinding generate \
               --component "$COMPONENT_NAME" \
               --component-release "$RELEASE_NAME" \
               --target-env "$TARGET_ENV" \
