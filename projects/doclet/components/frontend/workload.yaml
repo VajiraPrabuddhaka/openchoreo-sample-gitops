@@ -1,0 +1,20 @@
+apiVersion: openchoreo.dev/v1alpha1
+kind: Workload
+metadata:
+  name: frontend-workload
+  namespace: default
+spec:
+  owner:
+    componentName: frontend
+    projectName: doclet
+  containers:
+    main:
+      image: placeholder:latest
+      files:
+        - key: config.json
+          mountPath: /usr/share/nginx/html
+          value: |
+            {
+              "docServiceUrl": "http://default.development.openchoreoapis.localhost:19080/document-svc",
+              "collabWsUrl": "ws://default.development.openchoreoapis.localhost:19080/collab-svc/ws"
+            }

@@ -1,0 +1,28 @@
+apiVersion: openchoreo.dev/v1alpha1
+kind: Component
+metadata:
+  name: frontend
+  namespace: default
+spec:
+  owner:
+    projectName: doclet
+
+  componentType: deployment/web-application
+  autoDeploy: true
+
+  workflow:
+    name: docker
+    systemParameters:
+      repository:
+        url: "https://github.com/VajiraPrabuddhaka/doclet-app.git"
+        revision:
+          branch: "main"
+        appPath: "/"
+    parameters:
+      docker:
+        context: "/"
+        filePath: "/frontend/Dockerfile"
+
+  parameters:
+    replicas: 1
+    port: 80
