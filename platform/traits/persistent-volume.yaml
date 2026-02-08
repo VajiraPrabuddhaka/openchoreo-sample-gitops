@@ -8,10 +8,10 @@ spec:
     parameters:
       volumeName: "string"
       mountPath: "string"
-      containerName: "string | default=app"
+      containerName: "string | default=main"
 
     envOverrides:
-      size: "string | default=10Gi"
+      size: "string | default=1Gi"
       storageClass: "string | default=local-path"
 
   creates:
