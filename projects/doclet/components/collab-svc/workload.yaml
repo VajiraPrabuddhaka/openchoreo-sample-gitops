@@ -4,14 +4,14 @@ metadata:
   name: collab-svc-workload
   namespace: default
 spec:
+  containers:
+    main:
+      env:
+      - key: DOCLET_COLLAB_ADDR
+        value: :8090
+      - key: DOCLET_NATS_URL
+        value: nats://nats:4222
+      image: host.k3d.internal:10082/doclet-collab-svc-image:v1-0d45251d
   owner:
     componentName: collab-svc
     projectName: doclet
-  containers:
-    main:
-      image: placeholder:latest
-      env:
-        - key: DOCLET_COLLAB_ADDR
-          value: ":8090"
-        - key: DOCLET_NATS_URL
-          value: "nats://nats:4222"
