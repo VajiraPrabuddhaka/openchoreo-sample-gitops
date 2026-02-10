@@ -8,7 +8,7 @@ spec:
   owner:
     componentName: frontend
     projectName: doclet
-  releaseName: frontend-20260209-1
+  releaseName: frontend-27672a78
   workloadOverrides:
     containers:
       main:
