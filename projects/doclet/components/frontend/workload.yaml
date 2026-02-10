@@ -14,7 +14,7 @@ spec:
             "docServiceUrl": "http://default.development.openchoreoapis.localhost:19080/document-svc",
             "collabWsUrl": "ws://default.development.openchoreoapis.localhost:19080/collab-svc/ws"
           }
-      image: host.k3d.internal:10082/doclet-frontend-image:v1-7b499241
+      image: host.k3d.internal:10082/doclet-frontend-image:v1-27672a78
   owner:
     componentName: frontend
     projectName: doclet
